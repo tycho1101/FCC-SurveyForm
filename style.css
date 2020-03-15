@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Saira:400,700&display=swap');
+:root {
+    --primary-bg-color: rgb(164, 77, 214);
+    --form-bg-color: rgb(235, 235, 235);
+    --submit-btn-bg-color: navy;
+    --submit-btn-text-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.25rem;
+}
+
+header {
+    text-align: center;
+}
+
+label {
+    padding: 0;
+    margin: .5em 0 0 0;
+    display: flex;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: vertical;
+    /* max-width: 100%; */
+    width: 100%;
+    min-height: 4em;
+    max-height: 12em;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 0 .5em;
+    height: 2em;
+    color: rgb(78, 78, 78);
+}
+
+#name,
+#email,
+#number {
+    box-sizing: border;
+    width: 100%;
+}
+
+#description {
+    margin: 0;
+}
+
+#form-wrapper {
+    margin: 2em 0;
+    padding: 2em;
+    max-width: 960px;
+    background-color: var(--form-bg-color);
+    box-sizing: border-box;
+}
+
+#radio-like .radio-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#form-submit-container {
+    margin: 1em 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit {
+    padding: .5em;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: var(--submit-btn-bg-color);
+    color: var(--submit-btn-text-color);
+    border-radius: 0.25em;
+}
+
+@media (min-width: 300px) {
+    #form-wrapper {
+        max-width: 280px;
+        padding: 1em;
+    }
+}
+
+@media (min-width: 360px) {
+    #form-wrapper {
+        max-width: 340px;
+    }
+}
+
+@media (min-width: 576px) {
+    #form-wrapper {
+        max-width: 540px;
+        padding: 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    #form-wrapper {
+        max-width: 720px;
+    }
+}
